@@ -1,0 +1,2 @@
+ proxy=http://alca.proxy.corp.sopra:8080
+ rejectUnauthorized=false

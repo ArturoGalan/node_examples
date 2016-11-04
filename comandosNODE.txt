@@ -1,0 +1,50 @@
+--Instalacion de modulos desde npm:
+    nmp install express
+    nmp install express@4.2.0
+    npm install express@latest
+    //This install an adds into package.json file
+    npm install express --save
+    //This install an adds into package.json file in the development section
+    npm install mocha --save-dev
+    //Install globally because is a tool in this case for all the projects
+    npm install grunt -g
+    
+    
+--Creacion de package.json
+    ejecutando: nmp init
+    obtenemos un generador del archivo package.json
+
+//omite devDependencies section    
+    npm install --production
+//si existe el package.json npm install obtiene todas las dependencias y las instala
+    npm install
+//listar dependencias locales y globales
+    npm ls
+    npm ls -g
+
+//Ejecutar algo en node con cambios en caliente
+node-dev main.js
+nodemon
+----------------------------ejemplos----------------------------------------
+https://nodeschool.io/es/
+----------------------------------------------------------------------------
+
+
+//Instalar code completion para modulos de node desde vscode:
+    Para ello instalamos de manera global typings
+
+    npm install -g typings
+
+    como estamos detras del proxy, dentro del proyecto añadimos el fichero .typingsrc con el contenido:
+    proxy=http://alca.proxy.corp.sopra:8080
+    rejectUnauthorized=false
+
+    Despues instalamos las definiciones que queramos, esto crea un fichero typings.json con los modulos que tenemos definidos.
+
+    typings install env~node@6.0.0 --global --save
+
+
+//proxy detras de npm y node
+d:\Profiles\agalan\.npmrc
+https-proxy = "http://alca.proxy.corp.sopra:8080/"
+proxy = "http://alca.proxy.corp.sopra:8080/"
